@@ -1,0 +1,161 @@
+\documentclass[12pt,a4paper,ngerman,twoside]{scrbook}
+
+\usepackage{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern} % besserer schriftsatz
+\usepackage{graphicx}
+\usepackage{siunitx}	% \[\SI{100}{\electronvolt}\] %BLOCK % \SI{100}{\electronvolt} %Fliesstext
+\sisetup{
+  locale = DE ,
+  per-mode = symbol,
+  output-decimal-marker={.}
+}
+\usepackage{float}
+\usepackage[labelfont={bf,sf},font={small,it},% Optionen für Abbildungstexte
+  labelsep=space]{caption}
+\usepackage{amsmath,amssymb} %align for math
+\usepackage{hyperref,cleveref}
+\usepackage{url}
+\usepackage{todonotes}
+\urlstyle{same}
+\usepackage{pdfpages}
+\setlength\parindent{0pt}
+
+\newcommand{\newlines}{\newline\newline}
+
+\begin{document}
+\begin{titlepage}
+	\centering
+	\includegraphics[width=0.3\textwidth]{illustrations/tu_logo.png}\par\vspace{1cm}
+	{\scshape\LARGE Technische Universit\"at Berlin \par}
+	\vspace{1cm}
+	{\scshape\Large Bachelorarbeit\par}
+	\vspace{1.5cm}
+	{\Large\bfseries Validierung einer Simulation von Selbstabsorptionseffekten bei Fluoreszenz-Nanoskopie\par}
+	\vspace{2cm}
+	{\Large\itshape Conrad Dollinger\par}
+	\vfill
+	
+	Erstgutachterin: Prof. Dr. Birgit  \textsc{Kanngie\ss er}\par
+	Zweitgutachter: Dr. Burkhard \textsc{Beckhoff}\par
+	\vspace{0.5cm}
+	Betreuer: Dr. Lars \textsc{Lühl}\par
+	\vfill
+	Fakultät II - Mathematik und Naturwissenschaften\par
+	Institut für Optik und Atomare Physik\par 
+	AG Analytische Röntgenphysik \par
+\vspace{0.5cm}
+	{\large 10. Juli 2018\par}
+\end{titlepage}
+%Eine leere Seite einfügen 
+\newpage 
+\thispagestyle{empty} %plain, empty[keine Kopf/Fusszeile], headings[Fusszeile wird zur Kopfzeile]
+\addtocounter{page}{-1}
+\quad
+%einfügen Ende
+
+\newpage
+\thispagestyle{empty} %plain, empty, headings
+\includepdf[pages={1}]{erklaerung.pdf}
+\addtocounter{page}{-1}
+
+%Eine leere Seite einfügen 
+\newpage 
+\thispagestyle{empty} %plain, empty[keine Kopf/Fusszeile], headings[Fusszeile wird zur Kopfzeile]
+\addtocounter{page}{-1}
+\quad
+%einfügen Ende
+
+
+\newpage
+\pagenumbering{Roman} % set the numbering style to Roman:uppercase roman numerals
+\tableofcontents
+
+\newpage
+\thispagestyle{empty}
+\pagenumbering{arabic} % set the numbering style to arabic numbers
+\setcounter{page}{0} % Set the page counter to 1
+\input{einleitung.tex}
+
+\chapter{Theoretischer Hintergrund}	%Arbeitstitel
+\input{roentgenstrahlung.tex}
+\input{fluoreszenz.tex}
+\input{sdd.tex}
+\input{detektoreffekte.tex}
+
+\chapter{AnImaX-Projekt und QUADaps-Software}	%Arbeitstitel
+\input{animax.tex}
+\input{detektorgeometrie.tex}
+\input{quadaps.tex}
+
+\chapter{Probendesign und Simulationen}	%Arbeitstitel
+\input{vorwort.tex}
+\input{si_kante.tex}
+\input{cu_kante.tex}
+\input{45grad.tex}
+
+\chapter{Zusammenfassung und Ausblick}
+\input{zusammenfassung.tex}
+
+
+
+\begin{thebibliography}{9}
+
+\bibitem[Bec06]{bbbook}
+  B. Beckhoff, B. Kanngießer, N. Langhoff, R. Wedell, H. Wolff,
+  \textit{Handbook of Practical X-Ray Fluorescence Analysis},
+  Springer-Verlag Berlin Heidelberg, 2006.
+  
+\bibitem[Dem10]{dem3}
+  Wolfgang Demtröder,
+  \textit{Experimentalphysik 3: Atome, Moleküle und Festkörper},
+  Springer-Verlag Berlin Heidelberg, 2010.  
+  
+\bibitem[Die18]{hanna}
+  Hanna Dierks,
+  \textit{Simulation of Solid Angle Effects in the Detection of X-ray Fluorescence upon Investigation of Inhomogeneous Samples},
+  Technische Universität Berlin, 2018.
+
+\bibitem[Gaf05]{gaft}
+  M. Gaft, R. Reisfeld, G. Panczer,
+  \textit{Modern Luminescence Spectroscopy of Minerals and Materials},
+  Springer-Verlag Berlin Heidelberg, 2005.
+
+\bibitem[Got18]{christine}
+  Christine Gottschalk,
+  \textit{Persönliche Kommunikation},
+  AG Vogt, Technische Universität Freiberg.
+
+\bibitem[Heg01]{spectrum}
+  J.C.P. Heggie, N.A. Liddell, K.P.Maher,
+  \textit{Applied Imaging Technology},
+  4th Edition, 2001.
+
+\bibitem[Hin08]{synchrotron}
+  Frank Hinterberger,
+  \textit{Physik der Teilchenbeschleuniger und Ionenoptik},
+  Zweite Auflage, Springer-Verlag Berlin Heidelberg, 2008.
+
+\bibitem[Lue18]{lars}
+  Lars Lühl, Konstantin Andrianov, Hanna Dierks, Andreas Haidl, Aurelie Dehlinger, Thomas Wilhein and Birgit Kanngießer,
+  \textit{Scanning Transmission X-ray Microscopy with Efficient X-ray Fluorescence Detection (STXM-XRF) for Biomedical Applications in the Soft and Tender Energy Range},
+  Technische Universität Berlin und University of Applied Science (Remagen), eingereicht 2018.
+
+\bibitem[Mal04]{malzer}
+  Wolfgang Malzer,
+  \textit{3D Mikro-Röntgenfluoreszenzanalyse},
+  Universität Bremen, 2004.
+
+\bibitem[Rön96]{wcrpaper}
+  Wilhelm Conrad Röntgen,
+  \textit{Ueber eine neue Art von Strahlen},
+  Stahel'sche K. Hof- und Universitätsbuch- und Kunsthandlung, Würzburg, 1896.
+  
+\bibitem[She55]{sherman}
+  Jacob Sherman,
+  \textit{The theoretical derivation of fluorescent X-ray intensities from mixtures*},
+  Spectrochimica Acta, Vol 7, S.283-306, London, 1955.
+  
+\end{thebibliography}
+
+\end{document}

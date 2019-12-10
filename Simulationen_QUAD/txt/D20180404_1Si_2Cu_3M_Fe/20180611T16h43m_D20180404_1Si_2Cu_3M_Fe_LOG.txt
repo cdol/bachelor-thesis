@@ -1,0 +1,20 @@
+THIS IS THE CONFUGURATION FILE:
+ Samplename: D20180404_1Si_2Cu_3M_Fe
+Support Layer Elements: [6, 1, 8, 14, 7]
+Support Thickness: 0.00051
+-------------
+Sample layout: [0.001, 0.0025, 9.999999999999999e-06]
+Sample Top Layer Elements: [6, 1, 8, 26, 6, 1, 8, 29, 14, 7]
+Sample Thickness: 0.00351
+x Start: 0
+x Stop: 0.007
+x STEPS: 51
+y Start: 0.0
+y Stop: 0.01
+y STEPS: 2
+energy: 1.1
+Intensity: 1000000000.0
+delta Z: 0.0001
+angular intervalls per detector: 15
+radial intervalls: 20
+Process took: 1588.821266seconds

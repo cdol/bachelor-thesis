@@ -1,0 +1,3 @@
+Das Simulationsverhalten wurde auf "korrekte Ausführung" überprüft. Dafür wurden einmal die Bereiche außerhalb des Simulationsbereichs mit anderen Layern definiert. Dies hatte, wie zu erwarten war, keinerlei Auswirkung auf das Simulationsergebnis.
+
+Außerdem wurden unsymmetrische Massenprozentanteile simuliert. Hier zeigt sich bei Fe20Cu5 eine x%-ige Absorptionskante, bei Fe5Cu20 eine y%-ige Absorptionskante. Der Vergleich mit Fe5Cu5 zeigt ..., mit Fe20Cu20 verglichen zeigt sich jedoch, dass die Absorptionskanten im Allgemeinen nur von den Massenanteilen abhängen. Dies liegt daran, dass die Absorptionswahrscheinlichkeit der Floureszenz in der Nachbarschicht fast ausschließlich abhängig vom Massenanteil ist.

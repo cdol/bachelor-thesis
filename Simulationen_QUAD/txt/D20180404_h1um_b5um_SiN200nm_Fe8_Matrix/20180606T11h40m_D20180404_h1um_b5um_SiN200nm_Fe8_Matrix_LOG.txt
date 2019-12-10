@@ -1,0 +1,20 @@
+THIS IS THE CONFUGURATION FILE:
+ Samplename: D20180404_h1um_b5um_SiN200nm_Fe8_Matrix
+Support Layer Elements: [6, 1, 8, 14, 7]
+Support Thickness: 0.00012
+-------------
+Sample layout: [0.0001, 1.9999999999999998e-05]
+Sample Top Layer Elements: [6, 1, 8, 26, 14, 7]
+Sample Thickness: 0.00012
+x Start: 0
+x Stop: 0.007
+x STEPS: 51
+y Start: 0.0
+y Stop: 0.01
+y STEPS: 2
+energy: 0.75
+Intensity: 1000000000.0
+delta Z: 0.0001
+angular intervalls per detector: 15
+radial intervalls: 20
+Process took: 104.075775seconds
